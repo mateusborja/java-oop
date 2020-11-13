@@ -15,12 +15,12 @@ public class AplicacaoEletrodomestico {
 		Radio radio1 = new Radio(110);
 
 		radio1.ligar();
+		radio1.setNome("Jovem Pan");
 		radio1.setSintonia(99.1f);
 		radio1.setVolume(69);
-		System.out.print("O Radio está ");
-		System.out.print(radio1.isLigado() ? "ligado " : " desligado ");
-		System.out.println("e \"Sintonizado\" em " + radio1.getSintonia() + " com volume bem alto... volume = "
-				+ radio1.getVolume());
+		System.out.print("O Radio " + radio1.getNome() + radio1.FM + " está ");
+		System.out.print(radio1.isLigado() ? "ligada " : " desligada ");
+		System.out.println("e \"Sintonizado\" em " + radio1.getSintonia() + " no volume " + radio1.getVolume());
 
 		geladeira1.ligar();
 		geladeira1.setModelo("Brastemp");
