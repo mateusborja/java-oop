@@ -6,11 +6,10 @@
 
 package com.mateusborja.eletrodomestico;
 
-public interface Venda {
-	
-	double caculaVenda(Orcamento orcamento);
-	
-	
+public class CalculadorVenda {
 
+	public double calcula(Orcamento orcamento) {
+		return orcamento.getValor() * 0.01;
+	}
 
 }
