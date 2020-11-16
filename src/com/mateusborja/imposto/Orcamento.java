@@ -8,6 +8,7 @@ package com.mateusborja.imposto;
 
 public class Orcamento {
 
+	private double orcamentoMes;
 	private double valor;
 
 	public Orcamento(double valor) {
@@ -18,5 +19,17 @@ public class Orcamento {
 	public double getValor() {
 		return valor;
 	}
+
+	public double getOrcamentoMes() {
+		return orcamentoMes;
+	}
+
+	public void setOrcamentoMes(double orcamentoMes) {
+		this.orcamentoMes = orcamentoMes;
+	}
+	
+	
+	
+	
 
 }
