@@ -7,7 +7,7 @@
 package com.mateusborja.imposto;
 
 public interface Imposto {
-
+	
 	double calcula(Orcamento orcamento);
 	
 }
