@@ -10,7 +10,7 @@ public class CalculadorDeImpostos {
 
 	public void calcula(Orcamento orcamento, Imposto impostoQualquer) {
 		double imposto = impostoQualquer.calcula(orcamento);
-		System.out.println("Valor do Imposto R$ " + imposto);
+		System.out.println("Imposto R$ "+ imposto);
 	}
 
 }
