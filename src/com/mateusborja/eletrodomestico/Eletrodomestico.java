@@ -8,7 +8,7 @@ package com.mateusborja.eletrodomestico;
 
 public abstract class Eletrodomestico {
 
-	private String nome;
+	private static String nome;
 	private int voltagem;
 	private boolean ligado;
 
@@ -16,8 +16,8 @@ public abstract class Eletrodomestico {
 
 	public abstract void desligar();
 
-	public Eletrodomestico(int voltagem, boolean ligado) {
-		this.setVoltagem(voltagem);
+	public Eletrodomestico(String nome, boolean ligado) {
+		this.setNome(nome);
 		this.setLigado(ligado);
 	}
 
@@ -27,6 +27,7 @@ public abstract class Eletrodomestico {
 		this.setLigado(ligado);
 	}
 
+	
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
@@ -42,7 +43,7 @@ public abstract class Eletrodomestico {
 			this.ligado = false;
 	}
 
-	public String getNome() {
+	public static String getNome() {
 		return nome;
 	}
 
@@ -53,4 +54,6 @@ public abstract class Eletrodomestico {
 	public boolean isLigado() {
 		return ligado;
 	}
+
+
 }
