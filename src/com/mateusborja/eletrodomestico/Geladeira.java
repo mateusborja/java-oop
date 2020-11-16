@@ -10,17 +10,12 @@ public class Geladeira extends Eletrodomestico {
 
 	private String modelo;
 	private String fabricante;
-	private Long barCode;
 	private double consumo;
-	private boolean controleTemperatura;
-	private int capacidadeArmazenamento;
-	private int quantidadePortas;
+	private double valor;
 
-	public Geladeira(int voltagem, boolean ligado) {
-		super(voltagem, ligado);
+	public Geladeira(String nome, boolean ligado) {
+		super(nome, ligado);
 		setModelo(modelo);
-		setBarCode(0l);
-		setControleTemperatura(controleTemperatura);
 
 	}
 
@@ -33,7 +28,6 @@ public class Geladeira extends Eletrodomestico {
 		super.setLigado(true);
 		setFabricante("Brastemp");
 		setModelo("Hitech-HC");
-		setQuantidadePortas(3);
 
 	}
 
@@ -58,14 +52,6 @@ public class Geladeira extends Eletrodomestico {
 		this.fabricante = fabricante;
 	}
 
-	public Long getBarCode() {
-		return barCode;
-	}
-
-	public void setBarCode(Long barCode) {
-		this.barCode = barCode;
-	}
-
 	public double getConsumo() {
 		return consumo;
 	}
@@ -74,27 +60,19 @@ public class Geladeira extends Eletrodomestico {
 		this.consumo = consumo;
 	}
 
-	public boolean isControleTemperatura() {
-		return controleTemperatura;
+	public double getValor() {
+		return valor;
 	}
 
-	public void setControleTemperatura(boolean controleTemperatura) {
-		this.controleTemperatura = controleTemperatura;
+	public void setValor(double valor) {
+		this.valor = valor;
 	}
 
-	public int getCapacidadeArmazenamento() {
-		return capacidadeArmazenamento;
+	public void vendaGeladeira(String modelo, double valor) {
+		this.modelo = modelo;
+		this.valor = valor;
+		System.out.println("O item " + getModelo() + " foi vendido por R$ " + getValor());
+
 	}
 
-	public void setCapacidadeArmazenamento(int capacidadeArmazenamento) {
-		this.capacidadeArmazenamento = capacidadeArmazenamento;
-	}
-
-	public int getQuantidadePortas() {
-		return quantidadePortas;
-	}
-
-	public void setQuantidadePortas(int quantidadePortas) {
-		this.quantidadePortas = quantidadePortas;
-	}
 }
