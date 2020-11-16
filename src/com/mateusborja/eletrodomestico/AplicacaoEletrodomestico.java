@@ -10,10 +10,11 @@ public class AplicacaoEletrodomestico {
 
 	public static void main(String[] args) {
 
-		Geladeira geladeira1 = new Geladeira(110, true);
-		Radio radio1 = new Radio(110);
-		
-		
+		Geladeira geladeira1 = new Geladeira("Brastempo", true);
+		Radio radio1 = new Radio("AAA", 110, true);
+
+	
+
 		radio1.ligar();
 		radio1.setNome("Jovem Pan");
 		radio1.setSintonia(99.1f);
@@ -27,10 +28,8 @@ public class AplicacaoEletrodomestico {
 
 		System.out.print("\nA Geladeira " + geladeira1.getModelo());
 		System.out.println(geladeira1.isLigado() ? " está ligada." : "desligada.");
-		
-		
-		
-		
+
+		geladeira1.vendaGeladeira("Brastemp", 1200);
 
 	}
 
