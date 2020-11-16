@@ -8,17 +8,17 @@ package com.mateusborja.eletrodomestico;
 
 public class Radio extends Eletrodomestico {
 
+
 	public static final short AM = 1;
 	public static final short FM = 2;
 	private int banda;
 	private float sintonia;
 	private int volume;
+	
 
-	public Radio(int voltagem) {
-		super(voltagem, true);
-		setBanda(Radio.FM);
-		setSintonia(0);
-		setVolume(0);
+
+	public Radio(String nome, int voltagem, boolean ligado) {
+		super(nome, voltagem, ligado);
 	}
 
 	public void desligar() {
