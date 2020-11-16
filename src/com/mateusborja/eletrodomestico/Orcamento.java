@@ -6,28 +6,19 @@
 
 package com.mateusborja.eletrodomestico;
 
-public class Orcamento implements Venda {
-	
+public class Orcamento {
+
 	private double valor;
 
 	public Orcamento(double valor) {
 		this.valor = valor;
-		
+
 	}
 
 	public double getValor() {
 		return valor;
 	}
 
-	public void setValor(double valor) {
-		this.valor = valor;
-	}
 
-	@Override
-	public double caculaVenda(Orcamento orcamento) {
-		return orcamento.getValor() * 0.02;
-	}
-	
-	
 
 }
