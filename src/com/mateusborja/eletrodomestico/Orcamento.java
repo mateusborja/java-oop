@@ -19,6 +19,8 @@ public class Orcamento {
 		return valor;
 	}
 
-
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
 
 }
