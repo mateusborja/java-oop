@@ -6,30 +6,16 @@
 
 package com.mateusborja.eletrodomestico;
 
-public class AplicacaoEletrodomestico {
+public class TesteAplicacao01 {
 
 	public static void main(String[] args) {
 
-		Geladeira geladeira1 = new Geladeira("Brastempo", true);
-		Radio radio1 = new Radio("AAA", 110, true);
+		Geladeira geladeira1 = new Geladeira("Brastemp", true);
+		Orcamento oc1 = new Orcamento(100);
+		CalculadorVenda calculador = new CalculadorVenda();
+		VendaAVista vendaavista = new VendaAVista();
 
-	
-
-		radio1.ligar();
-		radio1.setNome("Jovem Pan");
-		radio1.setSintonia(99.1f);
-		radio1.setVolume(69);
-		System.out.print("O Radio " + radio1.getNome() + Radio.FM + " está ");
-		System.out.print(radio1.isLigado() ? "ligada " : " desligada ");
-		System.out.println("e \"Sintonizado\" em " + radio1.getSintonia() + " no volume " + radio1.getVolume());
-
-		geladeira1.ligar();
-		geladeira1.setModelo("Brastemp");
-
-		System.out.print("\nA Geladeira " + geladeira1.getModelo());
-		System.out.println(geladeira1.isLigado() ? " está ligada." : "desligada.");
-
-		geladeira1.vendaGeladeira("Brastemp", 1200);
+		calculador.realizaCalculo(oc1, vendaavista, geladeira1);
 
 	}
 
