@@ -8,8 +8,9 @@ package com.mateusborja.eletrodomestico;
 
 public class CalculadorVenda {
 
-	public double calcula(Orcamento orcamento) {
-		return orcamento.getValor() * 0.01;
+	public void realizaCalculo(Orcamento orcamento, Venda vendaqualquer, Eletrodomestico eletrodomestico) {
+		double venda = vendaqualquer.calcula(orcamento);
+		System.out.println("O item "+ eletrodomestico.getNome() + " foi vendido por R$ " + venda);
 	}
 
 }
