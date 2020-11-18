@@ -8,7 +8,6 @@ package com.mateusborja.eletrodomestico;
 
 public interface Venda {
 
-	double calcula(Eletrodomestico eletrodomestico, Orcamento orcamento);
-
+	double calcula(Orcamento orcamento);
 
 }
