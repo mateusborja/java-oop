@@ -11,28 +11,22 @@ public class Geladeira extends Eletrodomestico {
 	private String modelo;
 	private String fabricante;
 	private double consumo;
-	private double valor;
 
-	public Geladeira(String nome, boolean ligado) {
-		super(nome, ligado);
-		setModelo(modelo);
-
-	}
-
-	public Geladeira(String nome, int voltagem, boolean ligado) {
-		super(nome, voltagem, ligado);
+	public Geladeira(String modelo, boolean ligado) {
+		super(modelo, ligado);
 	}
 
 	@Override
 	public void ligar() {
 		super.setLigado(true);
 		setFabricante("Brastemp");
-		setModelo("Hitech-HC");
+		setModelo("Fresh-HC");
 
 	}
 
 	@Override
 	public void desligar() {
+		super.setLigado(false);
 
 	}
 
@@ -58,21 +52,6 @@ public class Geladeira extends Eletrodomestico {
 
 	public void setConsumo(double consumo) {
 		this.consumo = consumo;
-	}
-
-	public double getValor() {
-		return valor;
-	}
-
-	public void setValor(double valor) {
-		this.valor = valor;
-	}
-
-	public void vendaGeladeira(String modelo, double valor) {
-		this.modelo = modelo;
-		this.valor = valor;
-		System.out.println("O item " + getModelo() + " foi vendido por R$ " + getValor());
-
 	}
 
 }
