@@ -32,7 +32,7 @@ public class Lutador {
 		this.vitorias = vitorias;
 		this.derrotas = derrotas;
 		this.empates = empates;
-		this.categoria = this.getCategoria();
+		this.setCategoria();
 	}
 
 	public String getNome() {
@@ -132,10 +132,10 @@ public class Lutador {
 
 	public void apresentar() {
 		System.out.println("\n*******************");
-		System.out.println("CHEGOU A HORA DE APRESENTAMOS O LUTADOR >>> " + this.getNome());
+		System.out.println("CHEGOU A HORA DE APRESENTARMOS O LUTADOR \n>>> " + this.getNome() + " <<<");
 		System.out.println("Diretamente de(a) " + this.getNacionalidade());
 		System.out.println("com " + this.getIdade() + " anos e " + this.getAltura() + " m de altura.");
-		System.out.println("pesando " + this.getPeso() + " Kg" + " categoria " + this.getCategoria());
+		System.out.println("pesando " + this.getPeso() + " Kg," + " categoria " + this.getCategoria());
 		System.out.println(this.getVitorias() + " vitorias");
 		System.out.println(this.getDerrotas() + " derrotas e");
 		System.out.println(this.getEmpates() + " empates.");
@@ -151,7 +151,7 @@ public class Lutador {
 
 	@Override
 	public String toString() {
-		return "Lutador [nome=" + nome + ", nacionalidade=" + nacionalidade + ", idade=" + idade + ", altura=" + altura
+		return "\nLutador [nome=" + nome + ", nacionalidade=" + nacionalidade + ", idade=" + idade + ", altura=" + altura
 				+ ", peso=" + peso + ", categoria=" + categoria + ", vitorias=" + vitorias + ", derrotas=" + derrotas
 				+ ", empates=" + empates + "]";
 	}
