@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2020.  | All rights reserved
- * @author Mateus Borja // UX Designer • 3D Artist • Developer
+ * @author Mateus Borja // UX Designer ï¿½ 3D Artist ï¿½ Developer
  * at www.mateusborja.life
  */
 
@@ -85,9 +85,9 @@ public class Lutador {
 		if (peso <= 52.2) {
 			this.categoria = "Invalido!";
 		} else if (peso < 70.3) {
-			this.categoria = "Peso Médio";
+			this.categoria = "Peso MÃ©dio";
 		} else if (peso <= 83.9) {
-			this.categoria = "Peso Médio";
+			this.categoria = "Peso MÃ©dio";
 		} else if (peso <= 120) {
 			this.categoria = "Peso Pesado";
 
@@ -143,7 +143,7 @@ public class Lutador {
 	}
 
 	public void status() {
-		System.out.println(this.getNome() + " é um " + this.getCategoria());
+		System.out.println(this.getNome() + " Ã© um " + this.getCategoria());
 		System.out.println("ganho " + this.getVitorias() + ", ");
 		System.out.println("perdeu " + this.getDerrotas() + ", ");
 		System.out.println("e empatou " + this.getEmpates() + ".");
